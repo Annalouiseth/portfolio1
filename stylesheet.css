@@ -1,0 +1,460 @@
+header {
+    width: 100vw;
+    position: fixed;
+    padding: 0.5em 0.5em 1em 0.5em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 91%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+/********** media queries *******/
+
+@media screen and (max-width: 529px) {
+
+    header img {
+        width: 80px;
+        top: 0.5em;
+        right: 0.5em;
+    }
+
+    #om img {
+        float: none;
+        display: block;
+        margin: 0 auto 5em;
+    }
+
+    #om .column_text {
+        padding: 0.5em
+    }
+
+
+    footer .column {
+        padding: 5em;
+    }
+
+}
+
+@media screen and (min-width: 530px) and (max-width: 1023px) {
+
+    #om .sectionwrapper {
+        display: inline;
+        flex-wrap: nowrap;
+    }
+
+    footer .sectionwrapper {
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    #om img {
+        float: none;
+        display: block;
+        margin: 0 auto 2em;
+    }
+
+    #om .column_text {
+        padding: 0.5em
+    }
+
+    #om .column_video {
+        padding: 0;
+    }
+
+    #om .column_video h3 {
+        padding-left: 0.5em;
+    }
+
+    #om video {
+        padding-top: 0.5em
+    }
+
+
+
+    #kontakt {
+        margin-top: 2em;
+    }
+
+    #kontakt .column {
+        padding: 0.5em;
+    }
+
+    footer .column {
+        padding: 0.5em;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    footer .sectionwrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media screen and (min-width: 530px) {
+
+    footer .column {
+        border-right: solid white;
+        border-width: 1px;
+
+    }
+
+    footer {
+        border-left: solid white;
+        border-width: 1px;
+    }
+}
+
+/********** media queries *******/
+
+/********* margin og padding **************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#om {
+    margin: 1em;
+}
+
+#om .column_text {
+    padding: 4em;
+}
+
+#om img {
+    margin: 2em;
+}
+
+#kontakt {
+    margin: 1em;
+}
+
+#kontakt .column {
+    padding: 1em;
+
+}
+
+footer .column {
+    padding: 1em;
+}
+
+footer {
+    margin: 1em;
+}
+
+#webdesign {
+    padding: 5em;
+}
+
+#portfolio {
+    margin: 1em;
+    padding: 5em;
+
+}
+
+#animation {
+
+    padding: 5em;
+}
+
+#video {
+
+    padding: 5em;
+}
+
+#ux {
+
+    padding: 5em;
+}
+
+/********* margin og padding slut **************/
+
+/********** portfolio *************/
+
+#portfolio .sectionwrapper {
+
+    max-width: 899px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+#portfolio .sectionwrapper div {
+    width: 180px;
+    height: 180px;
+    margin: 1vw;
+}
+
+
+#portfolio h3 {
+    margin-top: 85px;
+    color: white;
+}
+
+#portfolio div:hover {
+
+    filter: grayscale(0%);
+}
+
+.tema1 {
+
+    background-color: #2E2E2E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1000px;
+    text-align: center;
+    filter: opacity(80%);
+}
+
+.tema2 {
+    background-color: #E8B689;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1000px;
+    text-align: center;
+    filter: opacity(80%);
+}
+
+.tema3 {
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1000px;
+    text-align: center;
+    filter: opacity(80%);
+}
+
+.tema4 {
+    background-color: #E59094;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1000px;
+    text-align: center;
+    filter: opacity(80%);
+}
+
+
+/********** portfolio slut *************/
+
+/*********flex********/
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .column_video {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#om .column_text {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kontakt .column {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+
+
+footer .column {
+    flex-grow: 1;
+    flex-basis: 400px;
+
+}
+
+/********* flex *******/
+
+/********* float ******/
+
+.billede {
+    float: right;
+    max-width: 250px;
+
+}
+
+
+.logo {
+    float: left;
+    max-width: 150px;
+}
+
+/********* float slut *****/
+
+/********font********/
+
+h3 {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    color: black;
+}
+
+
+h4 {
+    font-family: 'Bad Script';
+    font-size: 1.7em;
+    color: #2E2E2E;
+    padding: 0.3em;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #2E2E2E;
+    padding: 0.2em;
+}
+
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    color: #2E2E2E;
+    font-size: 1em;
+    color: #B58B69;
+    text-decoration: none;
+}
+
+
+.material-icons {
+    margin: 0 0.2em 0 0;
+
+    vertical-align: middle;
+}
+
+/*******font slut*********/
+
+/* Style all font awesome icons */
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #E59094;
+    color: white;
+}
+
+
+/*******Baggrundsfarve********/
+
+#om {
+    background-color: #FFE6DC;
+}
+
+#kontakt .column {
+    background-color: #FFE6DC;
+}
+
+#portfolio {
+    background-color: #FFE6DC;
+}
+
+footer {
+    background: #333;
+
+}
+
+
+footer h3 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+
+#webdesign {
+    background-color: #FFE6DC;
+}
+
+#animation {
+    background-color: #FFE6DC;
+}
+
+#video {
+    background-color: #FFE6DC;
+}
+
+#ux {
+    background-color: #FFE6DC;
+}
+
+/*******Baggrundsfarve slut********/
+
+/************ Menu **************/
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+
+}
+
+
+/************ Menu slut **************/
+
+/********** Links **************/
+
+<style > a:link {
+    color: #B58B69;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: gray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+
+}
+
+a:active {
+    color: lightblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+</style >
+/************* Links slut ***********/
